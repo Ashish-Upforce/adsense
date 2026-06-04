@@ -51,16 +51,12 @@ export default function AdSenseAd({
           📢 AdSense Slot {adSlot} {label ? `— ${label}` : ""}
         </div>
       )}
-      <ins
-        className="adsbygoogle"
-        style={{ display: "block", ...style }}
-        data-ad-client={AD_CLIENT}
-        data-ad-slot={adSlot}
-        data-ad-format={adFormat}
-        {...(fullWidthResponsive
-          ? { "data-full-width-responsive": "true" }
-          : {})}
-      />
+      <ins className="adsbygoogle"
+     style={{display:"block"}}
+     data-ad-client="ca-pub-3050823753585928"
+     data-ad-slot="4173872271"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
     </div>
   );
 }
