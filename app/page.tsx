@@ -54,7 +54,19 @@ export default function Home() {
 
       {/* Header banner — replace adSlot with your AdSense unit ID */}
       <div className="w-full flex justify-center py-3 bg-white border-b border-amber-200 shadow-sm">
-        <AdSenseAd adSlot="0000000001" label="Header Banner" adFormat="horizontal" className="min-h-[90px] flex items-center justify-center w-full max-w-[728px]" />
+        <AdSenseAd adSlot="5526326864" label="Header Banner" adFormat="auto" className="min-h-[90px] flex items-center justify-center w-full max-w-[728px]" />
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3050823753585928"
+     crossOrigin="anonymous"></script>
+<ins className="adsbygoogle"
+     style={{display:"block"}}
+     data-ad-client="ca-pub-3050823753585928"
+     data-ad-slot="5526326864"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
       </div>
 
       <div className="max-w-5xl mx-auto px-4 py-8">
