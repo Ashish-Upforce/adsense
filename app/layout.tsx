@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Script from "next/script";
+import React from "react";
 
 const ADSENSE_CLIENT_ID = "ca-pub-3050823753585928";
 
@@ -23,7 +24,7 @@ export default function RootLayout({
          * Get your ID from: AdSense → Account → Account information → Publisher ID
          */}
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3050823753585928"
-     crossorigin="anonymous"></script>
+     crossOrigin="anonymous"></script>
       </head>
       <body className="bg-amber-50 min-h-screen font-sans">
         {children}
