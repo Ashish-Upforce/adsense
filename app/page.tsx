@@ -96,7 +96,10 @@ export default function Home() {
 
             {/* In-feed rectangle */}
             <div className="mb-5 flex justify-center">
-              <AdSenseAd adSlot="0000000002" label="In-Feed 300x250" adFormat="rectangle" className="min-h-[250px] w-full max-w-[336px]" />
+            <AdSenseAd
+  adSlot="2170525467"
+  adFormat="auto"
+/>
             </div>
 
             {/* Filter Tabs */}
