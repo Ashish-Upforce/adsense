@@ -25,14 +25,25 @@ export default function Home() {
     return true;
   });
 
-  const addTodo = () => {
+  const addTodo = async () => {
     if (!input.trim()) return;
+  
+    // Trigger ad first
+    try {
+      if (typeof window !== "undefined") {
+        document.dispatchEvent(new Event("click"));
+      }
+    } catch (e) {
+      console.log("Ad trigger failed", e);
+    }
+  
     const newTodo: Todo = {
       id: Date.now(),
       text: input.trim(),
       done: false,
       createdAt: new Date().toLocaleDateString(),
     };
+  
     setTodos((prev) => [newTodo, ...prev]);
     setInput("");
     setAddCount((c) => c + 1);
