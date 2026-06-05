@@ -47,7 +47,22 @@ export default function RootLayout({
     `}
   </Script>
   <Script src="https://quge5.com/88/tag.min.js" data-zone="246387" async data-cfasync="false"></Script>
-
+<Script
+  id="nap5k-script"
+  strategy="afterInteractive"
+>
+  {`
+    (function(s){
+      s.dataset.zone='11103860';
+      s.src='https://nap5k.com/tag.min.js';
+    })(
+      [document.documentElement, document.body]
+        .filter(Boolean)
+        .pop()
+        .appendChild(document.createElement('script'))
+    );
+  `}
+</Script>
   <meta
     name="google-adsense-account"
     content={ADSENSE_CLIENT_ID}
