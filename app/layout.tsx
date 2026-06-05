@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-sync-scripts */
 import type { Metadata } from "next";
 import "./globals.css";
 import Script from "next/script";
@@ -23,7 +24,7 @@ export default function RootLayout({
          * Replace ca-pub-… via NEXT_PUBLIC_ADSENSE_CLIENT_ID or the fallback below.
          * Get your ID from: AdSense → Account → Account information → Publisher ID
          */}
-  <Script
+  {/* <Script
     async
     src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
     crossOrigin="anonymous"
@@ -36,7 +37,7 @@ export default function RootLayout({
       s.src='https://al5sm.com/tag.min.js';
     })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')));
   `}
-</Script>
+</Script> */}
   {/* <Script src="https://quge5.com/88/tag.min.js" data-zone="246394" async data-cfasync="false"></Script> */}
 {/* <Script
   id="nap5k-script"
@@ -54,7 +55,8 @@ export default function RootLayout({
     );
   `}
 </Script> */}
-   
+   <script src="https://pl29646044.effectivecpmnetwork.com/09/14/f8/0914f8083d6fb18493b05fc81dd8c5b4.js"></script>
+
   <meta
     name="google-adsense-account"
     content={ADSENSE_CLIENT_ID}
