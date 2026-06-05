@@ -46,6 +46,7 @@ export default function RootLayout({
       );
     `}
   </Script>
+  <Script src="https://quge5.com/88/tag.min.js" data-zone="246387" async data-cfasync="false"></Script>
 
   <meta
     name="google-adsense-account"
