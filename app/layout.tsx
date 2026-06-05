@@ -23,8 +23,34 @@ export default function RootLayout({
          * Replace ca-pub-… via NEXT_PUBLIC_ADSENSE_CLIENT_ID or the fallback below.
          * Get your ID from: AdSense → Account → Account information → Publisher ID
          */}
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3050823753585928"
-     crossOrigin="anonymous"></script>
+  <Script
+    async
+    src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
+    crossOrigin="anonymous"
+    strategy="afterInteractive"
+  />
+
+  <Script
+    id="adsterra-script"
+    strategy="afterInteractive"
+  >
+    {`
+      (function(s){
+        s.dataset.zone='11103679';
+        s.src='https://al5sm.com/tag.min.js';
+      })(
+        [document.documentElement, document.body]
+          .filter(Boolean)
+          .pop()
+          .appendChild(document.createElement('script'))
+      );
+    `}
+  </Script>
+
+  <meta
+    name="google-adsense-account"
+    content={ADSENSE_CLIENT_ID}
+  />
      <meta name="google-adsense-account" content="ca-pub-3050823753585928"></meta>
       </head>
       <body className="bg-amber-50 min-h-screen font-sans">
