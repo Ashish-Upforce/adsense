@@ -29,8 +29,16 @@ export default function RootLayout({
     crossOrigin="anonymous"
     strategy="afterInteractive"
   />
-  <Script src="https://quge5.com/88/tag.min.js" data-zone="246394" async data-cfasync="false"></Script>
-<Script
+  <Script id="al5sm-script" strategy="afterInteractive">
+    {`
+      (function(s){
+        s.dataset.zone='11103924';
+        s.src='https://al5sm.com/tag.min.js';
+      })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')));
+    `}
+  </Script>
+  {/* <Script src="https://quge5.com/88/tag.min.js" data-zone="246394" async data-cfasync="false"></Script> */}
+{/* <Script
   id="nap5k-script"
   strategy="afterInteractive"
 >
@@ -45,7 +53,7 @@ export default function RootLayout({
         .appendChild(document.createElement('script'))
     );
   `}
-</Script>
+</Script> */}
    
   <meta
     name="google-adsense-account"
